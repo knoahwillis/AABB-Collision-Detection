@@ -93,7 +93,11 @@ int main(int argc, char *argv[]){
 				pos1.x + pos1.w > pos2.x &&
 				pos1.y < pos2.y + pos2.h &&
 				pos1.y + pos1.h > pos2.y){
-					
+					SDL_SetTextureColorMod(texture1, 255, 0, 0);
+					SDL_SetTextureColorMod(texture2, 255, 0, 0);
+				}else{
+					SDL_SetTextureColorMod(texture1, 255, 255, 255);
+					SDL_SetTextureColorMod(texture2, 255, 255, 255);
 				}
 			}
 		}
